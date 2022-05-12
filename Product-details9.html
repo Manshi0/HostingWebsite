@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Details  ShopKTM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="140px" height="50px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html">
+        <img src="images/cart.png" width="50px" height="30px">
+    </a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+   </div>
+</div>
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="column-3">
+            <img src="images/product8.png" width="100%">
+        </div>
+        <div class="column-3">
+            <p>Home / Peripherals</p>
+            <h1>MSI 27 Inch Curved Monitor</h1>
+            <h4>Rs.55,000</h4>
+            <select>
+                <option>Select Model</option>
+                <option>120 Hz</option>
+                <option>144 Hz</option>
+            </select>
+            <input type="number" value="1">
+            <a href="cart.html" class="btn">Add To Cart</a>
+            <h3>Product Details</h3>
+            <br>
+            <p>The magic behind the Xbox One X really happens inside rather than outside the box. Its nearest rival is the PS4 Pro, as previously mentioned, but the One X is considerably higher specced. It has six teraflops of processing power on its graphics SoC, in comparison with the PlayStation's 4.2. And the One X's octa-core CPU runs faster at 2.3GHz over the Pro's 2.1GHz.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related products</h2>
+        <p>View More</p>
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row">
+        <div class="column-2">
+            <a href="Product-details1.html" target="_blank">
+            <img src="images/product1.jpg" height="200px">
+            <h4>One Plus Nord</h4>
+            <p>Rs.53,999</p>
+        </a>
+        </div>
+        <div class="column-2">
+            <a href="Product-details6.html" target="_blank">
+            <img src="images/product6.jpg" height="200px">
+            <h4>Sony PlayStation 5</h4>
+            <p>Rs.65,000</p>
+        </a>
+        </div>
+        <div class="column-2">
+            <a href="Product-details7.html" target="_blank">
+            <img src="images/shroud.png" height="200px">
+            <h4>Logitech G Pro Series Shroud Edition</h4>
+            <p>Rs.55,000</p>
+        </a>
+        </div>
+        <div class="column-2">
+            <a href="Product-details8.html" target="_blank">
+            <img src="images/product7.jpeg" height="200px">
+            <h4>Lenovo Legion 5i</h4> 
+            <p>Rs.1,75,000</p>
+        </a>
+        </div>
+    </div>
+</div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h3>Download Our App</h3>
+                    <p>Download Our App On Android and ios</p>
+                    <div class="app-logo">
+                        <img src="images/logo2.png">
+                        <img src="images/logo3.png">
+                    </div>
+                    <p>&copy; Copyright ShopKTM 2020</p>
+                </div>
+                <div class="footer-column-2">
+                    <img src="images/logo.png">
+                   <p>We try our level best to deliver the gadgets in best availabe price and we take pleasure in that.</p> 
+                </div>
+                <div class="footer-column-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---JS for menu--->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
